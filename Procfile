@@ -1,1 +1,1 @@
-web: bundle exec ruby kingstonfleaapp.rb -p $PORT
+web: bundle exec ruby kingston_flea_app.rb -p $PORT
