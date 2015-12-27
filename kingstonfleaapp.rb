@@ -1,5 +1,4 @@
-require 'sinatra'
 
 get '/' do 
-	'Hello Janique'
+	haml :index, format: :html5
 end
