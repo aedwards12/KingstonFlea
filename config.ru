@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './kingstonfleaapp'
-run Sinatra::Application
+require './kingston_flea_app'
+run App
