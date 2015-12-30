@@ -1,3 +1,29 @@
 h6{
 	color: blue;
 }
+
+/*overrides*/
+.row {
+  max-width: 100%;
+}
+
+.flea-section{
+  height: 25em;
+  background-image: url("paper.gif");
+
+}
+
+.contact-section{
+
+}
+
+.event-space{
+
+}
+
+.map-section{
+
+}
+.info-section{
+
+}

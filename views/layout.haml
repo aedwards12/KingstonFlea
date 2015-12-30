@@ -1,6 +1,17 @@
 %html
-  %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/style.css"}
   %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/foundation.css"}
+  %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/style.css"}
 
-  %h6 rendering template then body 
+  .top-bar
+    .top-bar-left
+      .menu-text
+        Kingston Flea Market & Event Space
+    .top-bar-right
+      %ul.menu
+        %li
+          %a{ href: "#flea", title: "Flea" } Flea
+        %li
+          %a{ href: "#event_space", title: "event_space" } Event Space
+        %li
+          %a{ href: "#contact", title: "contact" } Contact
   = yield
