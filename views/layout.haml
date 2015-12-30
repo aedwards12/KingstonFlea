@@ -1,5 +1,4 @@
 %html
-  != css :application, :media => 'screen'
-  != js :app
+  %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/style.css"}
   %h6 rendering template then body 
   = yield
