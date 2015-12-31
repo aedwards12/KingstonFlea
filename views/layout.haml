@@ -1,5 +1,7 @@
 %html
+  %script{:type=>"text/javascript", src: "http://code.jquery.com/jquery-1.11.3.min.js" }
   %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/foundation.css"}
+  %link{:rel => :stylesheet, :type => :"text/css", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}
   %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/style.css"}
 
   .top-bar
@@ -15,3 +17,5 @@
         %li
           %a{ href: "#contact", title: "contact" } Contact
   = yield
+  %script{:type=>"text/javascript", src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDLg_Ksb5-veg-oPBy2-AlKOfpee4TE8Dk&callback=initMap"}
+    async defer

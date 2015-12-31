@@ -1,28 +1,50 @@
 .row.info-section
-	.small-12.medium-6.columns
-		%h2 Kingston, NY
-		%h4 234 broadway, 12344
-	.small-12.medium-3.columns.right
-		%ul.menu
-			%li
-				%a{ href: "#flea", title: "Flea" } Get directions
-			%li
-				%a{ href: "#event_space", title: "event_space" } 845-234-4646
+  .small-12.medium-6.columns
+    %h2 Kingston, NY
+    %h5 516 Broadway. Kingston, New York 12401
+  .small-12.medium-4.columns.right
+    %ul.menu
+      %li
+        %a{ href: "https://www.google.com/maps/place/516+Broadway,+Kingston,+NY+12401/@41.9282395,-74.0023333,17z/data=!3m1!4b1!4m2!3m1!1s0x89dd0fa6d6de9c35:0xa147b4b62a3c056a", title: "directions" }
+          %i.fa.fa-map-marker
+          Get directions
+      %li
+        %a{ href: "#telephone", title: "telephone" }
+          %i.fa.fa-phone
+          845-234-4646
 
-
-.row#flea.flea-section
-	.small-12.columns
-		.title-bar
-			Flea
+.row#flea
+  .small-12.columns.flea-section
+    .title-bar
+      Flea
 .row#event_space.event-space
-	.small-12.columns
-		.title-bar
-			Event Space
+  .small-12.columns
+    .title-bar
+      Event Space
 .row#map.map-section
-	.small-12.columns
-		.title-bar
-			Map
+  .small-12.columns
+    #map
+
 .row#contact.contact-section
-	.small-12.columns
-		.title-bar
-			Contact
+  .small-12.columns
+    .title-bar
+      Contact
+
+:javascript
+  $(document).ready( function() {
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 41.9282395, lng: -74.0023333},
+        scrollwheel: false,
+        zoom: 17
+      });
+      var marker = new google.maps.Marker({
+        position: {lat: 41.9282395, lng: -74.0023333},
+        map: map,
+        title: 'Kingston Flea'
+      });
+    }
+    initMap();
+  });
+
