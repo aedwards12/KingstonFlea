@@ -1,8 +1,8 @@
 .row.info-section
-  .small-12.medium-6.columns
+  .small-12.medium-8.columns
     %h2 Kingston, NY
     %h5 516 Broadway. Kingston, New York 12401
-  .small-12.medium-4.columns.right
+  .small-12.medium-4.columns
     %ul.menu
       %li
         %a{ href: "https://www.google.com/maps/place/516+Broadway,+Kingston,+NY+12401/@41.9282395,-74.0023333,17z/data=!3m1!4b1!4m2!3m1!1s0x89dd0fa6d6de9c35:0xa147b4b62a3c056a", title: "directions" }
@@ -16,11 +16,29 @@
 .row#flea
   .small-12.columns.flea-section
     .title-bar
-      Flea
+    .row
+      .small-12.medium-10.large-9.flea-content.small-centered.columns
+        .row.column.flea-header
+          %h3 Grand Opening January 9th, 2016
+        .row
+          .small-12.medium-6.columns.flea-inner-section
+            %h4 Indoor Flea Market
+            %h4 Open Weekends 10am - 6pm
+            %h4 Parking lot & Street Parking
+
+          .small-12.medium-6.columns.flea-inner-section
+            %h4 Vendors Needed
+            %ul.vendor-list
+              %li Vendors Needed
+              %li.cta-button
+                %a.button{ href: "mailto:anthony.edwardsjr@gmail.com?Subject=Vendor%20info%20requested", title: "email address"}
+                  Inquire
+
 .row#event_space.event-space
   .small-12.columns
     .title-bar
       Event Space
+
 .row#map.map-section
   .small-12.columns
     #map
@@ -29,6 +47,23 @@
   .small-12.columns
     .title-bar
       Contact
+  .small-12.medium-6.columns.end
+    %ul.contact-list
+      %li.fn
+        Tammara Taylor
+      %li.street-address
+        516 Broadway
+      %li.locality
+        Kingston
+      %li
+        %span.state
+          New York,
+        %span.zip
+          12401
+      %li.email
+        %a{ href: "#", title: "email address" }
+          Tammaralav@gmail.com
+
 
 :javascript
   $(document).ready( function() {
