@@ -1,7 +1,7 @@
-h6{
-	color: blue;
-}
 
+body{
+  color: #E6E6E6;
+}
 .row {
   max-width: 100%;
 }
@@ -29,7 +29,10 @@ h6{
 
 .flea-inner-section{
   padding:1em;
+}
 
+.color-black, .flea-inner-section ul li, .flea-inner-section h4{
+  color: black;
 }
 
 .contact-section{
@@ -46,19 +49,35 @@ h6{
 .event-space{
   background-color: #092D46;
   box-shadow: inset 0 20px 20px -20px #000000;
+  padding-bottom: 1em;
 }
 
-.map-section{
-
+.event-content{
+  padding-left: 2em;
 }
+.event-images{
+  padding-left: 1.2em;
+}
+
+.map-section{}
 
 .info-section{
   padding-top: 1.5em;
   position:relative;
+  background-color: #F9F9F9;
 }
 
-.info-section .columns h2, h5, .menu li{
+.info-section .columns h3, h5, .menu li, .social-icon{
   color: #888787;
+}
+
+.event-space .row .small-12 .columns p {
+  color: blue;
+
+}
+
+.social-icon{
+  font-size: .75em;
 }
 
 .menu li a{
@@ -111,4 +130,10 @@ h6{
 .menu-text{
   font-size: 32;
   color: #F9F9F9;
+}
+
+.top-bar-left{
+  @media only screen and( 'min-width': 40em;) {
+    'margin-left': 20em;
+  }
 }
